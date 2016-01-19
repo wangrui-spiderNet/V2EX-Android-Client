@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/material_cyan_500"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <EditText
+        android:id="@+id/new_topic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:hint="@string/title_hint"
+        android:maxLines="1"
+        android:minHeight="60dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <EditText
+        android:id="@+id/new_topic_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/new_topic_title"
+        android:gravity="start"
+        android:hint="@string/content_hint" />
+</RelativeLayout>
